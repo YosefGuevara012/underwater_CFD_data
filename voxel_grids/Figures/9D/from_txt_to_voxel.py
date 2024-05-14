@@ -396,7 +396,7 @@ result_matrix = np.stack((zeros_matrix,zeros_matrix,zeros_matrix,zeros_matrix,ze
 print("Matriz resultante:")
 print(result_matrix.shape)
 
-result_matrix = rotate_90_XZ(result_matrix)
+result_matrix = rotate_90_YZ(rotate_90_XY(rotate_90_XZ(result_matrix)))
 print(result_matrix.shape)
 
 obj_name = "AUV"
