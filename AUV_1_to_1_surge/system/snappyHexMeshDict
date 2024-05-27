@@ -37,8 +37,8 @@ geometry
     refinementBox
     {
         type searchableBox;
-        min (-1.0 -0.7 0.0);
-        max ( 8.0  0.7 2.5);
+        min (-1.5 -0.5 -0.5);
+        max ( 1.5  0.5 0.5);
     }
 };
 
@@ -159,7 +159,7 @@ castellatedMeshControls
     // section reachable from the locationInMesh is kept.
     // NOTE: This point should never be on a face, always inside a cell, even
     // after refinement.
-    locationInMesh (2 0 0);
+    locationInMesh (-3 0 0); // Due in cases of externalFlow we want the point in the blockMesh
 
 
     // Whether any faceZones (as specified in the refinementSurfaces)
@@ -218,7 +218,7 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        "(lowerWall|AUV).*"
+        "(AUV).*"
         {
             nSurfaceLayers 1;
         }

@@ -54,7 +54,7 @@ boundary
         type patch;
         faces
         (
-            (0 4 7 3)
+            (2 6 5 1)
         );
     }
     outlet
@@ -62,7 +62,7 @@ boundary
         type patch;
         faces
         (
-            (2 6 5 1)
+            (0 4 7 3)
         );
     }
     lowerWall
