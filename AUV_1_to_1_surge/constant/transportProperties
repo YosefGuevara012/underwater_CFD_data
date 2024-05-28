@@ -16,12 +16,7 @@ FoamFile
 
 transportModel  Newtonian;
 
-nu              [0 2 -1 0 0 0 0] 25; // Kinematic viscosity for time-reversible flow
+nu              [0 2 -1 0 0 0 0] 0.02; // Kinematic viscosity for trubulent flow
 
-/* 
-nu              [0 2 -1 0 0 0 0] 25; // Kinematic viscosity for laminar flow
-nu              [0 2 -1 0 0 0 0] 25; // Kinematic viscosity for turbulent flow
-nu              [0 2 -1 0 0 0 0] 25; // Kinematic viscosity for stability paper conditions after 500
-*/
 
 // ************************************************************************* //

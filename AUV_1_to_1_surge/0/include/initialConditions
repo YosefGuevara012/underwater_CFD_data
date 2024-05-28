@@ -8,7 +8,7 @@
 
 flowVelocity         (10 0 0);
 pressure             1106850; // Pt = Po + density*gravity*height = 
-turbulentKE          1e-6;    // Laminar flow 1e-6 for Time reversible Re = 0.63
-turbulentOmega       1e-6;    // Laminar flow 1e-6 for Time reversible Re = 0.63
+turbulentKE          0.375;    // Re = 800, turbulentFlow
+turbulentOmega       0.698;    // Re = 800, turbulentFlow
 
 // ************************************************************************* //
