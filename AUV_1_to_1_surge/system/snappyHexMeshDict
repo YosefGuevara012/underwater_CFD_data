@@ -92,7 +92,7 @@ castellatedMeshControls
     (
         {
             file "AUV.eMesh";
-            level 6;
+            level 2;
         }
     );
 
@@ -112,7 +112,7 @@ castellatedMeshControls
         AUV
         {
             // Surface-wise min and max refinement level
-            level (5 6);
+            level (1 2);
 
             // Optional specification of patch type (default is wall). No
             // constraint types (cyclic, symmetry) etc. are allowed.
@@ -159,7 +159,7 @@ castellatedMeshControls
     // section reachable from the locationInMesh is kept.
     // NOTE: This point should never be on a face, always inside a cell, even
     // after refinement.
-    locationInMesh (-3 0 0); // Due in cases of externalFlow we want the point in the blockMesh
+    locationInMesh (3 0 0); // Due in cases of externalFlow we want the point in the blockMesh
 
 
     // Whether any faceZones (as specified in the refinementSurfaces)
