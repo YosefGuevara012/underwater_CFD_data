@@ -224,7 +224,7 @@ print(result_matrix.shape)
 result_matrix = rotate_90_XZ(result_matrix)
 print(result_matrix.shape)
 
-obj_name = "AUV_5D"
+obj_name = "NPS"
 
 np.save(f"voxel_grid_{obj_name}.npy",result_matrix)
 
