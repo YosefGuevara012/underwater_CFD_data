@@ -172,10 +172,10 @@ result_matrix = np.stack((zeros_matrix,zeros_matrix,zeros_matrix,zeros_matrix,ze
 
 # Print Final Matrix shape
 print("Matriz resultante:")
-print(result_matrix.shape)
+print(result_matrix.shape) # This option works for keep the object Z axis over the fluid flow
 
-# result_matrix = rotate_90_XZ(result_matrix)
-# print(result_matrix.shape)
+result_matrix = rotate_90_XY(result_matrix)
+print(result_matrix.shape)
 
 obj_name = "AUV"
 
