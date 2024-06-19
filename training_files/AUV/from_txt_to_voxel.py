@@ -174,7 +174,8 @@ result_matrix = np.stack((zeros_matrix,zeros_matrix,zeros_matrix,zeros_matrix,ze
 print("Matriz resultante:")
 print(result_matrix.shape) # This option works for keep the object Z axis over the fluid flow
 
-result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix)))
+result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix))) # Proper orientation for surge motion 
+# result_matrix = rotate_180_XY(result_matrix) # Proper orientation for heave motion 
 print(result_matrix.shape)
 
 obj_name = "AUV"
