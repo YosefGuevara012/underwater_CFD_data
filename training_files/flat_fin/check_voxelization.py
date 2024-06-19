@@ -6,7 +6,7 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')  # This is a more common way to create a 3D axis
 
 # Load your voxel data
-x = np.load("voxel_grid_AUV_5D.npy")
+x = np.load("voxel_grid_flat_fin.npy")
 print(x)
 print(f"x.shape: {x.shape}")
 

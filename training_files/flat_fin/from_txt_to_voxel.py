@@ -91,10 +91,11 @@ result_matrix = np.stack((zeros_matrix,zeros_matrix,zeros_matrix,zeros_matrix,ze
 print("Matriz resultante:")
 print(result_matrix.shape)
 
-result_matrix = rotate_90_XZ(result_matrix)
+result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix))) # Proper orientation for surge motion 
+# result_matrix = rotate_180_XY(result_matrix) # Proper orientation for heave motion 
 print(result_matrix.shape)
 
-obj_name = "AUV_5D"
+obj_name = "flat_fin"
 
 np.save(f"voxel_grid_{obj_name}.npy",result_matrix)
 
