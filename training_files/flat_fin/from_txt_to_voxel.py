@@ -1,6 +1,6 @@
 import numpy as np
 
-result_matrix = np.ones((1,22,44))
+result_matrix = np.ones((1,22,22)) #Ensures a flat fin of 1m x 1m
 
 print(result_matrix.shape)
 
@@ -38,7 +38,7 @@ result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix))) # Prope
 # result_matrix = rotate_180_XY(result_matrix) # Proper orientation for heave motion 
 print(result_matrix.shape)
 
-obj_name = "flat_fin_h"
+obj_name = "flat_fin"
 
 np.save(f"voxel_grid_{obj_name}.npy",result_matrix)
 
