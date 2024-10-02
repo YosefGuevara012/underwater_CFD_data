@@ -15,7 +15,7 @@ if np.count_nonzero(x) == 0:
     print("The voxel data is empty or mostly zero.")
 
 # Customize colors and transparency
-ax.voxels(x, facecolors='blue', edgecolor='k')  # 'k' stands for black edge color
+ax.voxels(x, facecolors='gray', edgecolor='k')  # 'k' stands for black edge color
 
 # Adjust the viewing angle
 ax.view_init(elev=20, azim=30)  # 'elev' and 'azim' are elevation and azimuthal angles
