@@ -1,6 +1,6 @@
 import numpy as np
 
-result_matrix = np.ones((1,22,22)) #Ensures a flat fin of 1m x 1m
+result_matrix = np.ones((3,16,16)) #Ensures a flat fin of 1m x 1m
 
 print(result_matrix.shape)
 

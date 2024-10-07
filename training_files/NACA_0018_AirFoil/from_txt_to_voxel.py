@@ -76,8 +76,8 @@ layer2_matrix = np.array([
 layer3_matrix = np.array([
 				 [0],
                  [0],
-                 [0],
-                 [0],
+                 [1],
+                 [1],
                  [1],
                  [1],
                  [1],
