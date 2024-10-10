@@ -38,7 +38,7 @@ result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix))) # Prope
 # result_matrix = rotate_180_XY(result_matrix) # Proper orientation for heave motion 
 print(result_matrix.shape)
 
-obj_name = "flat_fin"
+obj_name = "flat_plane_3D"
 
 np.save(f"voxel_grid_{obj_name}.npy",result_matrix)
 
