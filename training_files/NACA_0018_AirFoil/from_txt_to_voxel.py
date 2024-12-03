@@ -123,11 +123,11 @@ def rotate_180_YZ(matrix):
 
 # final matrix to voxel
 result_matrix = np.stack((
-                          layer3_matrix, layer2_matrix, layer1_matrix,
+                          layer3_matrix,layer2_matrix,layer1_matrix,
                           middle_matrix, 
                           layer1_matrix, layer2_matrix,layer3_matrix), axis=0)
 
-n = 22
+n = 30
 result_matrix = np.tile(result_matrix, (1,1,n))
 
 
@@ -139,7 +139,7 @@ result_matrix = rotate_180_XY(rotate_90_YZ(rotate_90_XY(result_matrix))) # Prope
 # result_matrix = rotate_180_XY(result_matrix) # Proper orientation for heave motion 
 print(result_matrix.shape)
 
-obj_name = "Airfoil"
+obj_name = "Airfoil_L"
 
 np.save(f"voxel_grid_{obj_name}.npy",result_matrix)
 
